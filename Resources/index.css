@@ -1,0 +1,112 @@
+html {
+    font-size: 1.8vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+}
+
+body {
+    background-image: url(./Images/palm\ tree\ background.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+
+}
+
+img {
+    max-width: 45%;
+    max-height: 45%;
+    border-radius: 8%;
+}
+
+.invitation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.invitation-details {
+    text-align: right;
+}
+
+.gift {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.gift-ideas {
+    text-align: left;
+}
+
+.pictures {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+        html {
+            font-size: 3.5vw;
+        }
+
+        img {
+            max-width: 70%;
+            max-height: 70%
+        }
+
+        .invitation {
+            flex-direction: column;
+        }
+
+        .invitation-details {
+            text-align: center;
+            padding-right: 50px;
+            border: groove 2px white;
+        }
+
+        .gift {
+            flex-direction: column-reverse;
+        }
+
+        .gift-ideas {
+            text-align: center;
+            padding-right: 50px;
+            border: groove 2px white
+        }
+
+        .pictures {
+            flex-direction: column;
+        }
+
+        .invitation {
+            padding-top: 25px;
+            padding-bottom: 40px;
+        }
+
+        .gift {
+            padding-bottom: 40px;
+        }
+    }
